@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="starter">
 <head>
 <script src="ionic/js/ionic.min.js" ></script>
 <script src="ionic/js/ionic.bundle.min.js" ></script>
@@ -9,11 +9,14 @@
 <script src="ionic/js/angular/angular-resource.min.js" ></script>
 <script src="ionic/js/angular/angular-sanitize.min.js" ></script>
 <script src="ionic/js/angular-ui/angular-ui-router.min.js" ></script>
+
+<script src="js/app.js"></script>
+<script src="js/MainCtrl.js"></script>
 <title>Smash the Vote</title>
 </head>
 
-<body ng-app>
-<h1>{{ 'Angular Works???' }}</h1>
+<body ng-controller="MainCtrl">
+<h1>{{ 'Angular Works???' + blob }}</h1>
 </body>
 
 </html>
