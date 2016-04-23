@@ -14,5 +14,22 @@ angular.module('starter', ['ionic'])
 })
 
 .config(function($stateProvider, $urlRouterProvider) {
-  
+  $stateProvider
+  .state('index', {
+      url: "/index",
+      templateUrl: 'templates/index.html'
+  })
+  .state('why', {
+    url: "/why",
+    templateUrl: 'templates/why.html'
+  })
+  .state('when', {
+    url: "/when",
+    templateUrl: 'templates/when.html'
+  })  
+  .state('how', {
+    url: "/how",
+    templateUrl: 'templates/how.html'
+  })
+  $urlRouterProvider.otherwise('/index');  
 })
