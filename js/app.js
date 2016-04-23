@@ -17,7 +17,7 @@ angular.module('starter', ['ionic'])
   $stateProvider
   .state('index', {
       url: "/index",
-      templateUrl: 'templates/index.html'
+      templateUrl: 'index.html'
   })
   .state('why', {
     url: "/why",
