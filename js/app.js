@@ -15,8 +15,13 @@ angular.module('starter', ['ionic'])
 
 .config(function($stateProvider, $urlRouterProvider) {
   $stateProvider
-  .state('home', {
+  .state('intro', {
       url: "/",
+      templateUrl: 'templates/intro.html',
+      controller: 'IntroCtrl'
+  })
+  .state('home', {
+      url: "/home",
       templateUrl: 'templates/home.html'
   })
   .state('why', {
