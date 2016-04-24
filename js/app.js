@@ -31,7 +31,8 @@ angular.module('starter', ['ionic'])
   })
   .state('when', {
     url: "/when",
-    templateUrl: 'templates/when.html'
+    templateUrl: 'templates/when.html',
+    controller: 'WhenCtrl'
   })  
   .state('how', {
     url: "/how",

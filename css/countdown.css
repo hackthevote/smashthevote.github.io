@@ -1,0 +1,34 @@
+.countdown img {
+    margin: 20px;
+}
+
+.countdown {
+    text-align: center;
+    width: 918px;
+    height: 270px;
+    transform: scale(0.3,0.3);
+    position: relative;
+    left: -300px;
+    margin: 0 auto;
+}
+
+.flap_group {
+    width: 220px;
+    height: 200px;
+    float: left;
+    font-size: 100px;
+    line-height: 160px;
+    margin-left: 8px;
+}
+
+.flap_group_name {
+    font-size: 30px;
+}
+
+.flap {
+    width: 104px;
+    height: 160px;
+    float: left;
+    margin: 2px;
+    background: url('../img/flap_clock_bg1.png');
+}

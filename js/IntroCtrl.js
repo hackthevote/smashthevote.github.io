@@ -12,7 +12,7 @@ angular.module('starter').controller('IntroCtrl',
                     $ionicLoading.hide(); 
                     $scope.animHidden = false;
                 }, 800);
-                $timeout(function(){ window.location.href = '#/home'}, 4000);    
+                //$timeout(function(){ window.location.href = '#/home'}, 4000);    
             }
         });
 }]);
