@@ -1,0 +1,29 @@
+#why-triangle{
+    color: white;
+	width: 300px;
+	height: 180px;
+	background-image: url('http://sadew.org/wp/wp-content/uploads/2015/09/international_day_of_democracy.jpg');
+    background-size: 55%;
+	-webkit-clip-path: polygon(0 0, 0 100%, 100% 36%);
+    clip-path: polygon(0 0, 0 100%, 100% 36%);
+}
+
+#why-title {
+    color: white;
+    position: relative;
+    top: 20px;
+    left: -55px;
+    font-size: 40px;
+    text-shadow: 2px 2px 4px black;
+}
+
+#why-text {
+    color: white;
+    position: relative;
+    font-size: 16px;
+    top: 50px;
+    text-align: left;
+    width: 200px;
+    left: -40px;
+    text-shadow: 1px 1px 2px black;
+}

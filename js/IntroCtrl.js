@@ -1,5 +1,8 @@
 angular.module('starter').controller('IntroCtrl', 
-['$scope', '$timeout', '$ionicLoading', function($scope, $timeout, $ionicLoading){
+['$scope', '$timeout', '$ionicLoading', '$ionicHistory', function($scope, $timeout, $ionicLoading, $ionicHistory){
+    $ionicHistory.nextViewOptions({
+        disableBack: true
+    });
     $scope.$on('$stateChangeSuccess', 
         function(event, toState, toParams, fromState, fromParams){
             if(toState.name == "intro"){
@@ -9,7 +12,7 @@ angular.module('starter').controller('IntroCtrl',
                     $ionicLoading.hide(); 
                     $scope.animHidden = false;
                 }, 800);
-                $timeout(function(){ window.location.href = '#/home'}, 3500);    
+                $timeout(function(){ window.location.href = '#/home'}, 4000);    
             }
         });
 }]);
