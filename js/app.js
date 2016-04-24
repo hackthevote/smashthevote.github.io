@@ -36,5 +36,9 @@ angular.module('starter', ['ionic'])
     url: "/how",
     templateUrl: 'templates/how.html'
   })
+  .state('economics', {
+    url: "/economics",
+    templateUrl: 'templates/economics.html'
+  })
   $urlRouterProvider.otherwise('/');  
 })
