@@ -1,3 +1,3 @@
 angular.module('starter').controller('MainCtrl', function($scope){
-    $scope.blob = "working?";    
+    $scope.chats = ['bobby', 'robby', 'danny']; 
 });
