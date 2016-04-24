@@ -22,7 +22,8 @@ angular.module('starter', ['ionic'])
   })
   .state('home', {
       url: "/home",
-      templateUrl: 'templates/home.html'
+      templateUrl: 'templates/home.html',
+      controller: 'HomeCtrl'
   })
   .state('why', {
     url: "/why/",
@@ -36,6 +37,7 @@ angular.module('starter', ['ionic'])
     url: "/how",
     templateUrl: 'templates/how.html'
   })
+
   .state('topic', {
     url: "/topic/:topic/",
     templateUrl: 'templates/why.html',
