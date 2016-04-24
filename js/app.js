@@ -38,7 +38,12 @@ angular.module('starter', ['ionic'])
   })
   .state('economics', {
     url: "/economics",
-    templateUrl: 'templates/economics.html'
+    templateUrl: 'templates/economics/economics.html'
   })
+  .state('remainEconomics', {
+    url: "/remain_economics",
+    templateUrl: 'templates/economics/remainEconomics.html'
+  })
+
   $urlRouterProvider.otherwise('/');  
 })
