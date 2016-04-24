@@ -25,7 +25,7 @@ angular.module('starter', ['ionic'])
       templateUrl: 'templates/home.html'
   })
   .state('why', {
-    url: "/why",
+    url: "/why/",
     templateUrl: 'templates/why.html'
   })
   .state('when', {
@@ -36,14 +36,16 @@ angular.module('starter', ['ionic'])
     url: "/how",
     templateUrl: 'templates/how.html'
   })
-  .state('economics', {
-    url: "/economics",
-    templateUrl: 'templates/economics/economics.html'
+  .state('topic', {
+    url: "/topic/:topic/",
+    templateUrl: 'templates/why.html',
+    controller: "TopicController"
   })
-  .state('remainEconomics', {
-    url: "/remain_economics",
-    templateUrl: 'templates/economics/remainEconomics.html'
-  })
+  .state('topic.stance', {
+      url: "/topic/:topic/:stance",
+      templateUrl: 'templates/why.html',
+      controller: "TopicController"
+    })
 
   $urlRouterProvider.otherwise('/');  
 })
