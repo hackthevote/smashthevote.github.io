@@ -27,3 +27,9 @@
     left: -40px;
     text-shadow: 1px 1px 2px black;
 }
+
+.tri-image {
+    width: 100%;
+    left: 0px;
+    position: absolute;
+}
